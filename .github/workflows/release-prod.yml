@@ -19,7 +19,10 @@ jobs:
         run: npm install --global vercel@32.6.1
 
       - name: Install NestJS CLI
-        run: npm install -g @nestjs/cli@10.0.0
+        run: npm install -g @nestjs/cli
+
+      - name: Install Dependencies
+        run: npm install
 
       - name: Builds Project To Deploy It Into Vercel
         run: nest build
